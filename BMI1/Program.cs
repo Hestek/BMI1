@@ -22,12 +22,14 @@ namespace BMI1
             double.TryParse(Console.ReadLine(), out Height);
             Console.ReadLine();
 
-            count = (Weight) / (Height/100*Height/100);
+            count  = (Weight) / (Height/100*Height/100);
 
             Console.WriteLine();
+            count = Math.Round(count,2);
             Console.WriteLine($"Your BMI is{ count }");
             Console.ReadLine();
 
+            
         }
     }
 }
